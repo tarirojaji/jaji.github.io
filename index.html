@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ce4c1935f1.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- <script src="https://unpkg.co/gsap/dist/gsap.min.js"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+
+
+    <title>jaji.</title>
 </head>
+
 <body>
-    <p>OKKO</p>
+
+    <div class="percent">
+        <div class="fill"></div>
+        <div class="counter">
+            <div class="num"></div>
+        </div>
+    </div>
+    <div class="smooth-scroll">
+
+    <div class="container">
+
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">/</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">/about</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">/projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- main content -->
+        
+        <div class="content">
+            <!-- about -->
+            <div class="about-wrap">
+                <div id="about" class="about">
+                    <h1 class="about-title">hi, i'm tari</h1>
+                    <p class="about-intro">im a software engineering student at University of Portsmouth withinterest in ui/ux, 3d art and dapps.</p>
+    
+                    <!-- tech-stack -->
+                    <div class="tech-stack">
+                        <br>
+                        <p>technologies iv used:</p>
+
+
+
+                        <ul class="tech-stack-items">
+                            <li>Javascript</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>HTML & CSS</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Git</li>
+                            <li>Bash</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- projects -->
+            <div id="projects" class="projects">
+                <header class="projects-header-wrap" >
+                    <h1 class="projects-header">projects</h1>
+                </header>
+
+                <div class="projects-wrapper">
+                    <ul class="flex">
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">scrabble</div>
+                            <img class="project-img" src="1.jpg" alt="" srcset="" >
+                            <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ipsam?</div>
+                            <div class="project-tech">Javascript, Node.js, HTML+CSS </div>
+                        </li>
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">a*</div>
+                            <img class="project-img" src="1.jpg" alt="" srcset="" >
+                            <div class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</div>
+                            <div class="project-tech">Python (Pygame)</div>
+                        </li>
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">bot</div>
+                            <img class="project-img" src="1.jpg" alt="" srcset="" >
+                            <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ipsam?</div>
+                            <div class="project-tech">Python</div>
+                        </li>
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">nft avatars</div>
+                            <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ipsam?</div>
+                            <div class="project-tech">Javascript, Node.js</div>
+                        </li>
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">code editor</div>
+                            <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ipsam?</div>
+                            <div class="project-tech">Jascript, HTML+CSS</div>
+                        </li>
+                        <li class="project">
+                            <div class="project-links">
+                                <a href="javascript:;" class="github-icon">
+                                <i class="fab fa-github-square"></i>
+                                </a>
+                            </div>
+                            <div class="title">portfolio</div>
+                            <div class="project-desc">this site</div>
+                            <div class="project-tech">Jascript, HTML+CSS</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-wrapper">
+                <p>by tari 2021</p>
+                <div class="footer-links">
+                    <a href="javascript:;" class="footer-icons">
+                    <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="javascript:;" class="footer-icons">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    </div>
+
+
+
+
+    <script>
+        const counter = document.querySelector('.percent');
+        gsap.set(counter, {
+            x: -5,
+            y: -5,
+        });
+
+        window.addEventListener('mousemove', moveCounter);
+
+        function moveCounter(e) {
+            gsap.to(counter, 0.5, {
+                x: e.clientX,
+                y: e.clientY,
+            });
+        }
+
+        function progress() {
+            const windowScrollTop = $(window).scrollTop();
+            const docHeight = $(document).height();
+            const windowHeight = $(window).height();
+            const progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+            const $bgColor = progress > 99 ? "#fff" : "#fff";
+            const $textColor = progress > 99 ? "#fff" : "#333";
+
+            $(".num").text(Math.round(progress) + '%').css({ color: $textColor});
+
+            $(".fill")
+                .height(progress + '%')
+                .css({ backgroundColor: $bgColor });
+        }
+        progress();
+        $(document).on("scroll", progress);
+
+    </script>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
