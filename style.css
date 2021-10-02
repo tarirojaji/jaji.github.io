@@ -4,8 +4,8 @@
     width: 100%;
     box-sizing: border-box;
     cursor: cell;
-    color: rgba(255, 255, 255, 0.12);
-    color: white !important;
+    /* color: rgba(255, 255, 255, 0.12); */
+    color: white;
 
 }
 
@@ -100,11 +100,10 @@ a {
 .nav-link{
     font-size: 1rem;
     font-weight: 400;
-    color: white;
 }
 
 .nav-link:hover{
-    color: lime !important;
+    color: lime;
 }
 
 .content {
@@ -127,7 +126,6 @@ a {
 } */
 
 .about-title {
-    color: black;
     font-size: 5rem;
     /* border-top: 1px dashed white; */
     border-bottom: 1px dashed white;
@@ -135,7 +133,6 @@ a {
 }
 
 .about-intro {
-    color: black;
     font-size: 1.5em;
     max-width: 60%;
 }
@@ -170,10 +167,9 @@ ul.tech-stack-items li {
 
 }
 
-.projects {
+/* .projects {
     color: rgba(255, 255, 255, 0.12);
-    /* border: 2px solid blue; */
-}
+} */
 
 .projects-header {
     font-size: 2.5rem;
@@ -228,7 +224,7 @@ ul.tech-stack-items li {
 }
 
 .fab:hover {
-    color: lime !important;
+    color: lime;
 }
 
 .title {
@@ -237,6 +233,10 @@ ul.tech-stack-items li {
     font-weight: 700;
     margin-bottom: .75rem;
     z-index: 1;
+}
+
+.title:hover {
+    color: lime;
 }
 
 .project-img {
@@ -251,12 +251,13 @@ ul.tech-stack-items li {
 
 
 .project-desc, .project-tech {
-    color: gray !important;
+    color: gray;
 }
 
 .project-desc {
     height: 60%;
     font-size: 18px;
+    font-size: 1rem;
     padding-bottom: 40px;
 }
 
@@ -283,13 +284,6 @@ footer {
     justify-content: center;
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
 
 
 .num {

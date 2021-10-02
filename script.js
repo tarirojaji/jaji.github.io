@@ -13,7 +13,7 @@ function projectHover(e) {
     if (e.type === "mouseenter") {
         console.log('in')
         e.target.style.opacity = '100%';
-
+        // e.target.style.border = 'dashed 1px lime';
 
     } else if (e.type === "mouseleave") { 
         console.log('out')
