@@ -71,6 +71,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -223,7 +225,7 @@ ul.tech-stack-items li {
     justify-content: flex-end;
 }
 
-.fab:hover {
+.fab:hover, .title:hover {
     color: lime;
 }
 
@@ -235,9 +237,9 @@ ul.tech-stack-items li {
     z-index: 1;
 }
 
-.title:hover {
+/* .title:hover {
     color: lime;
-}
+} */
 
 .project-img {
     position: absolute;
