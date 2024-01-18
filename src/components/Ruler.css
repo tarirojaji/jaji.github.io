@@ -10,15 +10,17 @@
 
 .ruler.vertical {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    border: none;
-    border-right: 1px solid lightgrey !important;
+    align-items: stretch;
+    width: 10%;
 
-    margin-top: 8px;
-    color: green;
-    padding: 26px;
+    padding: 0 8px;
+    font-size: 12px;
+    height: 100%;
+    border-bottom: none;
+    border-right: 1px solid lightgrey;
+    justify-content: flex-end;
+    /* position: relative;
+    top: 34px; */
 }
 
 .marks {
@@ -31,7 +33,7 @@
 .marks.vertical {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: auto;
 }
 
 .ruler-mark,
@@ -42,9 +44,9 @@
 
 .ruler-mark.vertical,
 .ruler-mark-mid.vertical {
-    /* position: relative;
-    text-align: center; */
-    transform: rotate(-90deg);
+    position: relative;
+    text-align: center;
+
 }
 
 .ruler-mark-mid::after {
@@ -62,11 +64,11 @@
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -18px;
-    width: 0.5px;
-    height: 5px;
+    bottom: 7px;
+    width: 5px;
+    height: 0.3px;
     background-color: lightgrey;
-    transform: translateX(-50%);
+    transform: translateX(200%);
 }
 
 .ruler-mark::after {
@@ -84,16 +86,23 @@
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -30px;
-    width: 0.3px;
-    height: 15px;
+    bottom: -2px;
+    width: 15px;
+    height: 0.3px;
     background-color: lightgrey;
-    transform: translateX(-50%);
+    transform: translateX(0%);
 }
 
 .ruler-number {
     display: inline-block;
     margin-top: 5px;
+}
+
+.ruler-number.vertical {
+    display: inline-block;
+    margin-top: 5px;
+    /* margin-left: 5px; */
+    transform: rotate(-90deg);
 }
 
 .highlighted {

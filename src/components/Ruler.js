@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Ruler.css';
 
-const Ruler = ({ orientation }) => {
+const Ruler = ({ orientation, length = 20 }) => {
     const [highlightedNumber, setHighlightedNumber] = useState(null);
 
     // A helper function to generate the ruler markings
     const generateRulerMarks = () => {
         const marks = [];
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= length; i++) {
             marks.push(
                 <>
                     <div

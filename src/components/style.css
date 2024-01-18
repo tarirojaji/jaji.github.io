@@ -126,3 +126,8 @@ a:hover {
 /* .hovered {
     border-bottom: 1px dashed;
 } */
+
+.nav-page {
+    display: flex;
+    justify-content: center;
+}

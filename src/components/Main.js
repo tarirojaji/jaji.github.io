@@ -1,20 +1,23 @@
+import Nav from './Nav';
 import Page from './Page';
 import Ruler from './Ruler';
 import './style.css';
 
 function Main() {
   return (
+    <>
     <div className="Main">
-      <div className='side'>
-        {/* <Ruler orientation="vertical" /> */}
-      </div>
-
+      <Ruler orientation="vertical" length={20} />
       <div className='middle'>
       <Ruler />
+
       <Page />
+
       </div>
 
     </div>
+    </>
+
   );
 }
 
