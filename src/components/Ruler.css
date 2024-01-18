@@ -1,0 +1,107 @@
+.ruler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.ruler.vertical {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border: none;
+    border-right: 1px solid lightgrey !important;
+
+    margin-top: 8px;
+    color: green;
+    padding: 26px;
+}
+
+.marks {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+}
+
+.marks.vertical {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.ruler-mark,
+.ruler-mark-mid {
+    position: relative;
+    text-align: center;
+}
+
+.ruler-mark.vertical,
+.ruler-mark-mid.vertical {
+    /* position: relative;
+    text-align: center; */
+    transform: rotate(-90deg);
+}
+
+.ruler-mark-mid::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0.5px;
+    height: 5px;
+    background-color: lightgrey;
+    transform: translateX(-50%);
+}
+
+.ruler-mark-mid.vertical::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    width: 0.5px;
+    height: 5px;
+    background-color: lightgrey;
+    transform: translateX(-50%);
+}
+
+.ruler-mark::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    width: 0.3px;
+    height: 15px;
+    background-color: lightgrey;
+    transform: translateX(-50%);
+}
+
+.ruler-mark.vertical::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 0.3px;
+    height: 15px;
+    background-color: lightgrey;
+    transform: translateX(-50%);
+}
+
+.ruler-number {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.highlighted {
+    font-weight: bold;
+    color: #0089e2;
+}
+
+.highlighted::after {
+    height: 10px;
+    background-color: blue;
+}

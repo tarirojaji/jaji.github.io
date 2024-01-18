@@ -1,0 +1,128 @@
+table {
+    border-collapse: collapse;
+}
+
+box-icon {
+    vertical-align: middle;
+    height: 24px;
+    width: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0080f0;
+}
+
+.Main {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side {
+    /* width: 10%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page {
+    margin-top: 2em;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid lightgrey;
+    font-size: 12px;
+}
+
+.Header {
+    /* width: 90%; */
+    margin-bottom: 1em;
+}
+
+.topHeaderRow {
+    border-bottom: 1px solid black;
+}
+
+.name {
+    font-size: 3em !important;
+    border-right: 1px dashed black;
+    text-align: left;
+    width: 70%;
+}
+
+.contact {
+    text-align: right;
+}
+
+.title {
+    padding-top: 10px;
+    border-right: 1px solid black;
+    text-align: left;
+}
+
+.sectionTopRow {
+    border-top: 1px dashed black !important;
+}
+
+.sectionRow {
+    text-align: left;
+}
+
+.sectionTitle {
+    font-size: 15px;
+    text-align: left;
+    padding-right: 10px;
+    border-right: 1px dashed black;
+    border-top: 1px dashed black !important;
+}
+
+.sectionContentTopRow {
+    border-top: 1px solid black;
+}
+
+.sectionContentDate {
+    width: 20%;
+    text-align: end;
+}
+
+.sectionContent {
+    padding: 10px 0 10px 10px;
+    text-align: left;
+}
+
+.Content p {
+    margin: 10px 0 10px 0;
+}
+
+.toolsPill {
+    background-color: #fafafa;
+    margin: 0 10px 0 0;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+
+/* .hovered {
+    border-bottom: 1px dashed;
+} */
