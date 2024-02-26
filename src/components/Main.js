@@ -1,4 +1,4 @@
-import Nav from './Nav';
+// import Nav from './Nav';
 import Page from './Page';
 import Ruler from './Ruler';
 import './style.css';
@@ -11,7 +11,12 @@ function Main() {
       <div className='middle'>
       <Ruler />
 
+<div className='SideNavPage'>
+
+      {/* <Nav/> */}
+
       <Page />
+</div>
 
       </div>
 

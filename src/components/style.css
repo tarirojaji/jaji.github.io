@@ -131,3 +131,12 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+.SideNavPage {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLink:hover {
+    color: #0080f0;
+}

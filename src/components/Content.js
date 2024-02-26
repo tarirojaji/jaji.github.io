@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import './style.css';
+import PortfolioPopup from './PortfolioPopup';
 
 const Content = () => {
 
     const [hovered, setHovered] = useState(null);
+    const [isPopupOpen, setPopupOpen] = useState(false);
+
+    const openPopup = () => setPopupOpen(true);
+    const closePopup = () => setPopupOpen(false);
 
     return (
 
@@ -13,7 +18,7 @@ const Content = () => {
                 {/* INTRO */}
                 <tr className='sectionRow sectionTopRow'>
                     <th className='sectionTitle'> <b>Intro.</b></th>
-                    <td colSpan="2" className='sectionContent'> I'm a software engineering student at University of Portsmouth with an interest in frontend engineering.</td>
+                    <td colSpan="2" className='sectionContent'> I'm a software engineering student at University of Portsmouth with an interest in frontend development and ui/ux design.</td>
                 </tr>
                 {/* EDUCATION */}
 
@@ -75,9 +80,11 @@ const Content = () => {
                 {/* PROJECTS */}
 
                 <tr>
-                    <td className='sectionTitle' rowSpan="5"><b>Projects.</b></td>
+                    {/* adjust rowspan when adding new projects */}
+                    <td className='sectionTitle' rowSpan="6"><b>Projects.</b></td>
                     {/* <td colSpan="3">Column</td> */}
                 </tr>
+                
 
                 <tr>
                     <td
@@ -93,12 +100,35 @@ const Content = () => {
 
                         </a>
                         <p>
-                        My portfolio site. you are here.
+                            My portfolio site. you are here.
                         </p>
                         <span className='toolsPill'>react.js</span>
                         <span className='toolsPill'>html/css</span>
                     </td>
-                    <td className='sectionContentDate sectionContentTopRow'>2021 - 2023</td>
+                    <td className='sectionContentDate sectionContentTopRow'>2021 - 2024</td>
+                </tr>
+
+                <tr>
+                    <td
+                        onMouseEnter={() => setHovered('status100')}
+                        onMouseLeave={() => setHovered(null)}
+                        className={hovered === 'status100' ? 'sectionContent hovered' : 'sectionContent'}
+                        style={{ borderBottom: hovered === 'status100' ? '1px dashed' : '1px dashed transparent' }}>
+
+
+                        <span className='projectLink' onClick={openPopup}>
+
+                            <b>Status 100 Pr Site</b> <box-icon name='show' />
+
+                        </span>
+                        <PortfolioPopup isOpen={isPopupOpen} onClose={closePopup} />
+                        <p>
+                            A website redesign.
+                        </p>
+                        <span className='toolsPill'>ui/ux</span>
+                        <span className='toolsPill'>figma</span>
+                    </td>
+                    <td className='sectionContentDate'>2024</td>
                 </tr>
 
                 <tr>
@@ -168,6 +198,8 @@ const Content = () => {
                     </td>
                     <td className='sectionContentDate'>2021</td>
                 </tr>
+
+               
 
 
             </tbody>
